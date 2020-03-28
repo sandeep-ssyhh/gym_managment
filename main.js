@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var port = 9898;
+var port =9000;
 var indexRoute = require('./server/route/index'); // Importing index file of route
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
