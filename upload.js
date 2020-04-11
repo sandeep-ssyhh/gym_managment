@@ -25,6 +25,20 @@ app.post("/upload", (req, res, next) => {
 
 })
 
+//******************************** */
+
+
 app.listen(3000, () => {
     console.log("Post started");
 })
+
+const becryipt = require('bcryptjs')
+const myFunction = async () => {
+
+    const password = 'Sandeep@123';
+    const hashPassword = await becryipt.hash(password,8);
+    console.log(password);
+    console.log(hashPassword);
+}
+
+myFunction();
